@@ -1,4 +1,4 @@
-const apikey = "491c10cd545087c0d8fb099abd756b75";
+const apikey = "";
 const baseUrl = "https://api.themoviedb.org/3";
 
 async function fetchmovies(movieName) {
