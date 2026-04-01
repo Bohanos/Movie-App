@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+img, video{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    background-color: #1c1c1c;
+}
+header{
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    background-color: #333;
+    border-radius: 0.8rem;
+}
+header h1{
+    color: #fff;
+}
+header div{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    gap: 2rem;
+}
+header div input{
+    height: 2rem;
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+header div button{
+    height: 2rem;
+    width: 10%;
+    background-color: #481a92;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.popular-movies{
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+    margin-top: 2rem;
+    margin: 0 auto;
+}
+.popular-movies p{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #a1afb1;
+}
+.movie-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 22%;
+    margin-bottom: 2rem;
+    background-color: #333;
+    border-radius: 0.8rem;
+    padding: 1%;
+}
+.movie-card img{
+    border-radius: 0.8rem;
+    height: 10rem;
+}
+.movie-card h2{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.popular-movies .ratings{
+    color: #fff;
+    font-size: 1rem;
+}
+.ratings i{
+    color: #f39c12;
+}
+
+
+@media screen and (max-width: 768px) {
+    header div input{
+        width: 60%;
+        height: 1rem;
+    }
+    header div button{
+        width: 10%;
+        height: 1rem;
+    }
+    header h1{
+        font-size: 1.5rem;
+    }   
+    .popular-movies p{
+        font-size: 1rem;
+    }
+    .movie-card{
+        width: 48%;
+    }
+    .movie-card img{
+        height: auto;
+    }
+    .movie-card h2{
+        font-size: 1rem;
+    }
+    .popular-movies .ratings{
+        font-size: 0.85rem;
+    }
+}
